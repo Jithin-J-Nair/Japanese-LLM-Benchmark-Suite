@@ -2,18 +2,6 @@
 敬語リライト、ビジネスメール補正、要約、翻訳、OCR整形など、日本語特化タスクでLLMを再現可能に評価するベンチマーク基盤。ダッシュボード、モデルレジストリ、HuggingFace自動検出、詳細スコア、実行履歴、日英UIを備える。
 A reproducible benchmark suite for evaluating Japanese LLMs across keigo rewriting, business email correction, summarization, translation, and OCR cleanup. Includes dashboards, model registry, HuggingFace auto‑model discovery, scoring rubrics, run history, and bilingual UI.
 
-Absolutely, Jithin — here are **two polished GitHub project descriptions**, one in **English** and one in **Japanese**, written at a professional level suitable for recruiters, engineers, and open‑source users.
-
-They are concise, clear, and highlight the strengths of **LLM‑JP‑Bench** as a serious benchmarking suite.
-
-You can paste these directly into your GitHub repository description or README.
-
----
-
-# 🇺🇸 **English GitHub Description**
-
-**LLM‑JP‑Bench — Japanese LLM Benchmark Suite**
-
 LLM‑JP‑Bench is a fully reproducible evaluation platform for comparing Large Language Models on Japanese‑specific tasks such as keigo rewriting, business email correction, summarization, translation, and OCR cleanup.  
 It provides a complete dashboard, model registry, HuggingFace auto‑model discovery, deterministic sandbox mode, detailed scoring rubrics, and exportable reports (CSV / JSON / Markdown).
 
