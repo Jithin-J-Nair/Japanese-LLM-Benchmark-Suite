@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #191920;
+  --color-ink2: #3c3c46;
+  --color-mute: #71717c;
+  --color-faint: #9b9ba4;
+  --color-washi: #f5f4f0;
+  --color-card: #ffffff;
+  --color-line: #e5e3dc;
+  --color-accent: #c73e1d;
+  --color-accent-deep: #a02f13;
+  --color-accent-soft: #fbeeea;
+  --color-navy: #20263a;
+  --color-forest: #2e6b52;
+  --color-gold: #a07a2e;
+  --font-sans: var(--font-sans-jp), "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --font-mono: var(--font-mono-jb), ui-monospace, monospace;
+}
+
+body {
+  background: var(--color-washi);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "palt";
+}
+
+::selection {
+  background: #f3c9bc;
+  color: var(--color-ink);
+}
+
+/* hairline scrollbars */
+::-webkit-scrollbar { height: 10px; width: 10px; }
+::-webkit-scrollbar-thumb { background: #d6d3cb; border-radius: 6px; border: 2px solid var(--color-washi); }
+::-webkit-scrollbar-track { background: transparent; }
+
+.num { font-variant-numeric: tabular-nums; }
+
+/* ---- markdown documentation rendering ---- */
+.md-body { color: var(--color-ink2); line-height: 1.85; font-size: 0.925rem; }
+.md-body h1 { font-size: 1.65rem; font-weight: 800; color: var(--color-ink); margin: 0 0 1rem; padding-bottom: .6rem; border-bottom: 2px solid var(--color-accent); }
+.md-body h2 { font-size: 1.2rem; font-weight: 700; color: var(--color-ink); margin: 2.2rem 0 .8rem; }
+.md-body h3 { font-size: 1rem; font-weight: 700; color: var(--color-ink); margin: 1.6rem 0 .6rem; }
+.md-body p { margin: .65rem 0; }
+.md-body ul, .md-body ol { margin: .6rem 0 .9rem 1.4rem; }
+.md-body ul { list-style: disc; }
+.md-body ol { list-style: decimal; }
+.md-body li { margin: .25rem 0; }
+.md-body code { font-family: var(--font-mono); font-size: .82em; background: #efede8; border: 1px solid var(--color-line); border-radius: 4px; padding: .1em .4em; }
+.md-body pre { background: #1d1d24; color: #e8e6df; border-radius: 10px; padding: 1rem 1.15rem; overflow-x: auto; margin: .9rem 0; font-size: .8rem; line-height: 1.6; }
+.md-body pre code { background: transparent; border: none; padding: 0; color: inherit; }
+.md-body table { border-collapse: collapse; margin: 1rem 0; width: 100%; font-size: .85rem; }
+.md-body th, .md-body td { border: 1px solid var(--color-line); padding: .45rem .7rem; text-align: left; }
+.md-body th { background: #efede8; font-weight: 700; }
+.md-body blockquote { border-left: 3px solid var(--color-accent); padding: .2rem .9rem; color: var(--color-mute); margin: 1rem 0; background: var(--color-accent-soft); border-radius: 0 8px 8px 0; }
+.md-body a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
+.md-body hr { border: none; border-top: 1px solid var(--color-line); margin: 1.6rem 0; }
+
+/* subtle animated accent for the run button */
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .72; }
+}
+.animate-soft { animation: pulse-soft 1.6s ease-in-out infinite; }
